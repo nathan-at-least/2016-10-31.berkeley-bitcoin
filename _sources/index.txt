@@ -1,0 +1,229 @@
+
+.. Zerocash - Easier, Simpler, Safer slides file, created by
+   hieroglyph-quickstart on Mon Apr 27 16:33:37 2015.
+
+.. We re-appropriate the "accelerator" class from hieroglyph style which
+   has text underlining.  This way I don't need to figure out how to
+   include custom css:
+
+.. role:: underline
+   :class: accelerator
+
+
+Authorization in a Permissionless World
+=======================================
+
+**Exploring the Zcash niche**
+
+`Nathan Wilcox` / nathan@z.cash / @least_nathan
+
+https://z.cash
+
+.. Why doesn't this work?
+.. Contents
+.. ========
+..
+.. .. toctree::
+..    :maxdepth: 2
+
+Who We Are
+==========
+
+- **security engineers**
+
+⋮
+
+Who We Are
+==========
+
+- **security engineers**
+- **cryptographers**
+
+⋮
+
+Who We Are
+==========
+
+- **security engineers**
+- **cryptographers**
+- **cryptocurrency experts**
+
+What We're Doing
+================
+
+**Zcash**
+
+- A **permissionless** cryptocurrency with transaction privacy
+- Launched on the 28th!
+- https://z.cash
+
+It's Alive!
+-----------
+
+.. figure:: _static/2016-10-31-zcashd-metrics-screen.png
+   :width: 80%
+
+   HT @str4d for screenshot; HT John Tromp for efficient CPU miner
+
+What is Zcash
+=============
+
+- **permissionless**: Anyone may use it at their discretion.
+
+⋮
+
+What is Zcash
+=============
+
+- **permissionless**: Anyone may use it at their discretion.
+- **cryptocurrency**: Transactions encapsulate monetary policy and ownership semantics.
+
+⋮
+
+What is Zcash
+=============
+
+- **permissionless**: Anyone may use it at their discretion.
+- **cryptocurrency**: Transactions encapsulate monetary policy and ownership semantics.
+- **privacy**: Only transaction participants see details by default.
+
+Transaction Details
+-------------------
+
+- In Zcash today, transaction details include:
+
+  + sender,
+  + recipient,
+  + amount
+
+⋮
+
+Transaction Details
+-------------------
+
+- In Zcash *today*, transaction details include:
+
+  + sender,
+  + recipient,
+  + amount
+
+- In Zcash tomorrow: privacy may be extended to cover more.
+
+How?
+----
+
+* The privacy is implemented with zero-knowledge proving technology.
+
+⋮
+
+How?
+----
+
+* The privacy is implemented with zero-knowledge proving technology.
+* A zero-knowledge proof convinces a `verifier` of some logical statement, `S`,
+
+⋮
+
+How?
+----
+
+* The privacy is implemented with zero-knowledge proving technology.
+* A zero-knowledge proof convinces a `verifier` of some logical statement, `S`,
+
+  + -given `S` along with public and **private** inputs.
+
+⋮
+
+How?
+----
+
+* The privacy is implemented with zero-knowledge proving technology.
+* A zero-knowledge proof convinces a `verifier` of some logical statement, `S`,
+
+  + -given `S` along with public and **private** inputs.
+
+* **Zero-knowledge** is a specific cryptographic property:
+
+⋮
+
+How?
+----
+
+* The privacy is implemented with zero-knowledge proving technology.
+* A zero-knowledge proof convinces a `verifier` of some logical statement, `S`,
+
+  + -when given `S` along with some `public` and some `private` inputs.
+
+* **Zero-knowledge** is a specific cryptographic property:
+
+  + *Nothing* can be learned about the private inputs from the proof.
+
+How? zk-SNARK
+~~~~~~~~~~~~~
+
+Specifically, Zcash uses the `zk-SNARK` proving technology.
+
+⋮
+
+How? zk-SNARK
+~~~~~~~~~~~~~
+
+Specifically, Zcash uses the `zk-SNARK` proving technology.
+
+* Succinct and non-interactive - necessary for a blockchain.
+
+A Quick Intermission
+====================
+
+pause. breath.
+
+Steps in Design Space
+=====================
+
+.. figure:: _static/sids.svg
+   :width: 80%
+
+XXX FIXME BELOW
+===============
+
+Steps in Design Space
+=====================
+
+.. raw:: html
+
+   <img src="_static/sids.svg" width="80%" height="40%"></img>
+
+Beyond Zerocash
+===============
+
+It's now possible to separate *validation* from *confidentiality*!
+
+- Zerocash is but one application of zero-knowledge proofs.
+
+- Where else will this separation of concerns break through?
+
++ Smart contracts, voting systems, compliance auditing, _____?
+
+Thanks!
+=======
+
+- Questions?
+
+Thanks!
+=======
+
+- Questions?
+
+- PS: We're looking for engineers.
+
+
+.. Appendix A. Zerocash Roadmap
+.. ============================
+..
+.. I can't say much yet, except:
+..
+.. - It will happen.
+..
+.. - We're working on code which will become open source.
+..
+.. - We're still solving a few hard problems, such as parameter setup.

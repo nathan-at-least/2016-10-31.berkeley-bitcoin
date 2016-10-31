@@ -1,1 +1,404 @@
-<html>this is a test</html>
+<!DOCTYPE html>
+
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Authorization in a Permissionless World &mdash; Read/Write Authorization in a Permissionless World</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/styles.css" type="text/css" />
+    <link rel="stylesheet" href="_static/single.css" type="text/css" />
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2016.10.31',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/common.js"></script>
+    
+    <script type="text/javascript" src="_static/slides.js"></script>
+    <script type="text/javascript" src="_static/sync.js"></script>
+    <script type="text/javascript" src="_static/controller.js"></script>
+    <script type="text/javascript" src="_static/init.js"></script>
+    
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="Read/Write Authorization in a Permissionless World" href="#" /> 
+  </head>
+  <body>
+
+<section
+   id="slide_container"
+   class='slides layout-regular'>
+
+
+  
+<article class="slide level-1" id="authorization-in-a-permissionless-world">
+
+<h1>Authorization in a Permissionless World</h1>
+
+<p><strong>Exploring the Zcash niche</strong></p>
+<p><cite>Nathan Wilcox</cite> / <a class="reference external" href="mailto:nathan&#37;&#52;&#48;z&#46;cash">nathan<span>&#64;</span>z<span>&#46;</span>cash</a> / &#64;least_nathan</p>
+<p><a class="reference external" href="https://z.cash">https://z.cash</a></p>
+
+
+
+
+</article>
+<article class="slide level-1" id="who-we-are">
+
+<h1>Who We Are</h1>
+
+<ul class="simple">
+<li><strong>security engineers</strong></li>
+</ul>
+<p>⋮</p>
+
+
+
+
+</article>
+<article class="slide level-1" id="id1">
+
+<h1>Who We Are</h1>
+
+<ul class="simple">
+<li><strong>security engineers</strong></li>
+<li><strong>cryptographers</strong></li>
+</ul>
+<p>⋮</p>
+
+
+
+
+</article>
+<article class="slide level-1" id="id2">
+
+<h1>Who We Are</h1>
+
+<ul class="simple">
+<li><strong>security engineers</strong></li>
+<li><strong>cryptographers</strong></li>
+<li><strong>cryptocurrency experts</strong></li>
+</ul>
+
+
+
+
+</article>
+<article class="slide level-1" id="what-we-re-doing">
+
+<h1>What We're Doing</h1>
+
+<p><strong>Zcash</strong></p>
+<ul class="simple">
+<li>A <strong>permissionless</strong> cryptocurrency with transaction privacy</li>
+<li>Launched on the 28th!</li>
+<li><a class="reference external" href="https://z.cash">https://z.cash</a></li>
+</ul>
+
+
+
+
+</article>
+<article class="slide level-2" id="it-s-alive">
+
+<h2>It's Alive!</h2>
+
+<div class="figure" id="id13">
+<a class="reference internal image-reference" href="_images/2016-10-31-zcashd-metrics-screen.png"><img alt="_images/2016-10-31-zcashd-metrics-screen.png" src="_images/2016-10-31-zcashd-metrics-screen.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">HT &#64;str4d for screenshot; HT John Tromp for efficient CPU miner</span></p>
+</div>
+
+
+
+
+</article>
+<article class="slide level-1" id="what-is-zcash">
+
+<h1>What is Zcash</h1>
+
+<ul class="simple">
+<li><strong>permissionless</strong>: Anyone may use it at their discretion.</li>
+</ul>
+<p>⋮</p>
+
+
+
+
+</article>
+<article class="slide level-1" id="id3">
+
+<h1>What is Zcash</h1>
+
+<ul class="simple">
+<li><strong>permissionless</strong>: Anyone may use it at their discretion.</li>
+<li><strong>cryptocurrency</strong>: Transactions encapsulate monetary policy and ownership semantics.</li>
+</ul>
+<p>⋮</p>
+
+
+
+
+</article>
+<article class="slide level-1" id="id4">
+
+<h1>What is Zcash</h1>
+
+<ul class="simple">
+<li><strong>permissionless</strong>: Anyone may use it at their discretion.</li>
+<li><strong>cryptocurrency</strong>: Transactions encapsulate monetary policy and ownership semantics.</li>
+<li><strong>privacy</strong>: Only transaction participants see details by default.</li>
+</ul>
+
+
+
+
+</article>
+<article class="slide level-2" id="transaction-details">
+
+<h2>Transaction Details</h2>
+
+<ul class="simple">
+<li>In Zcash today, transaction details include:<ul>
+<li>sender,</li>
+<li>recipient,</li>
+<li>amount</li>
+</ul>
+</li>
+</ul>
+<p>⋮</p>
+
+
+
+
+</article>
+<article class="slide level-2" id="id5">
+
+<h2>Transaction Details</h2>
+
+<ul class="simple">
+<li>In Zcash <em>today</em>, transaction details include:<ul>
+<li>sender,</li>
+<li>recipient,</li>
+<li>amount</li>
+</ul>
+</li>
+<li>In Zcash tomorrow: privacy may be extended to cover more.</li>
+</ul>
+
+
+
+
+</article>
+<article class="slide level-2" id="how">
+
+<h2>How?</h2>
+
+<ul class="simple">
+<li>The privacy is implemented with zero-knowledge proving technology.</li>
+</ul>
+<p>⋮</p>
+
+
+
+
+</article>
+<article class="slide level-2" id="id6">
+
+<h2>How?</h2>
+
+<ul class="simple">
+<li>The privacy is implemented with zero-knowledge proving technology.</li>
+<li>A zero-knowledge proof convinces a <cite>verifier</cite> of some logical statement, <cite>S</cite>,</li>
+</ul>
+<p>⋮</p>
+
+
+
+
+</article>
+<article class="slide level-2" id="id7">
+
+<h2>How?</h2>
+
+<ul class="simple">
+<li>The privacy is implemented with zero-knowledge proving technology.</li>
+<li>A zero-knowledge proof convinces a <cite>verifier</cite> of some logical statement, <cite>S</cite>,<ul>
+<li>-given <cite>S</cite> along with public and <strong>private</strong> inputs.</li>
+</ul>
+</li>
+</ul>
+<p>⋮</p>
+
+
+
+
+</article>
+<article class="slide level-2" id="id8">
+
+<h2>How?</h2>
+
+<ul class="simple">
+<li>The privacy is implemented with zero-knowledge proving technology.</li>
+<li>A zero-knowledge proof convinces a <cite>verifier</cite> of some logical statement, <cite>S</cite>,<ul>
+<li>-given <cite>S</cite> along with public and <strong>private</strong> inputs.</li>
+</ul>
+</li>
+<li><strong>Zero-knowledge</strong> is a specific cryptographic property:</li>
+</ul>
+<p>⋮</p>
+
+
+
+
+</article>
+<article class="slide level-2" id="id9">
+
+<h2>How?</h2>
+
+<ul class="simple">
+<li>The privacy is implemented with zero-knowledge proving technology.</li>
+<li>A zero-knowledge proof convinces a <cite>verifier</cite> of some logical statement, <cite>S</cite>,<ul>
+<li>-when given <cite>S</cite> along with some <cite>public</cite> and some <cite>private</cite> inputs.</li>
+</ul>
+</li>
+<li><strong>Zero-knowledge</strong> is a specific cryptographic property:<ul>
+<li><em>Nothing</em> can be learned about the private inputs from the proof.</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+</article>
+<article class="slide level-3" id="how-zk-snark">
+
+<h3>How? zk-SNARK</h3>
+
+<p>Specifically, Zcash uses the <cite>zk-SNARK</cite> proving technology.</p>
+<p>⋮</p>
+
+
+
+
+</article>
+<article class="slide level-3" id="id10">
+
+<h3>How? zk-SNARK</h3>
+
+<p>Specifically, Zcash uses the <cite>zk-SNARK</cite> proving technology.</p>
+<ul class="simple">
+<li>Succinct and non-interactive - necessary for a blockchain.</li>
+</ul>
+
+
+
+
+</article>
+<article class="slide level-1" id="a-quick-intermission">
+
+<h1>A Quick Intermission</h1>
+
+<p>pause. breath.</p>
+
+
+
+
+</article>
+<article class="slide level-1" id="steps-in-design-space">
+
+<h1>Steps in Design Space</h1>
+
+<div class="figure">
+<a class="reference internal image-reference" href="_images/sids.svg"><img alt="_images/sids.svg" src="_images/sids.svg" width="80%" /></a>
+</div>
+
+
+
+
+</article>
+<article class="slide level-1" id="xxx-fixme-below">
+
+<h1>XXX FIXME BELOW</h1>
+
+
+
+
+
+</article>
+<article class="slide level-1" id="id11">
+
+<h1>Steps in Design Space</h1>
+
+<img src="_static/sids.svg" width="80%" height="40%"></img>
+
+
+
+</article>
+<article class="slide level-1" id="beyond-zerocash">
+
+<h1>Beyond Zerocash</h1>
+
+<p>It's now possible to separate <em>validation</em> from <em>confidentiality</em>!</p>
+<ul class="simple">
+<li>Zerocash is but one application of zero-knowledge proofs.</li>
+<li>Where else will this separation of concerns break through?</li>
+</ul>
+<ul class="simple">
+<li>Smart contracts, voting systems, compliance auditing, _____?</li>
+</ul>
+
+
+
+
+</article>
+<article class="slide level-1" id="thanks">
+
+<h1>Thanks!</h1>
+
+<ul class="simple">
+<li>Questions?</li>
+</ul>
+
+
+
+
+</article>
+<article class="slide level-1" id="id12">
+
+<h1>Thanks!</h1>
+
+<ul class="simple">
+<li>Questions?</li>
+<li>PS: We're looking for engineers.</li>
+</ul>
+
+
+
+
+</article>
+
+</section>
+
+<section id="slide_notes">
+
+</section>
+
+  </body>
+</html>
