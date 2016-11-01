@@ -158,72 +158,210 @@ How?
 
   + *Nothing* can be learned about the private inputs from the proof.
 
-How? zk-SNARK
-~~~~~~~~~~~~~
+How? zk-SNARKs.
+~~~~~~~~~~~~~~~
 
 Specifically, Zcash uses the `zk-SNARK` proving technology.
 
 ⋮
 
-How? zk-SNARK
-~~~~~~~~~~~~~
+How? zk-SNARKs.
+~~~~~~~~~~~~~~~
 
 Specifically, Zcash uses the `zk-SNARK` proving technology.
 
 * Succinct and non-interactive - necessary for a blockchain.
+
+⋮
+
+How? zk-SNARKs.
+~~~~~~~~~~~~~~~
+
+Specifically, Zcash uses the `zk-SNARK` proving technology.
+
+* Succinct and non-interactive - necessary for a blockchain.
+
+(That's all about `zk-SNARK` in this slide deck!)
+
 
 A Quick Intermission
 ====================
 
 pause. breath.
 
-Steps in Design Space
-=====================
+Quiz Time
+=========
 
-.. figure:: _static/sids.svg
-   :width: 80%
+"Zcash is…"
 
-XXX FIXME BELOW
-===============
+⋮
 
-Steps in Design Space
-=====================
+Quiz Time
+=========
 
-.. raw:: html
+"Zcash is…"
 
-   <img src="_static/sids.svg" width="80%" height="40%"></img>
+* ☐ a new app
 
-Beyond Zerocash
-===============
+⋮
 
-It's now possible to separate *validation* from *confidentiality*!
+Quiz Time
+=========
 
-- Zerocash is but one application of zero-knowledge proofs.
+"Zcash is…"
 
-- Where else will this separation of concerns break through?
+* ☐ a new app
+* ☐ like Bitcoin, but with privacy
 
-+ Smart contracts, voting systems, compliance auditing, _____?
+⋮
+
+Quiz Time
+=========
+
+"Zcash is…"
+
+* ☐ a new app
+* ☐ like Bitcoin, but with privacy
+* ☐ a fancy new database
+
+?
+
+Quiz Time
+=========
+
+"Zcash is…"
+
+* ☑ a new app
+* ☑ like Bitcoin, but with privacy
+* ☑ a fancy new database
+
+All of these!
+
+A Design Space Fable
+====================
+
+Nathan's brief history of "blockchain".
+
+A Design Space Fable
+--------------------
+
+.. figure:: _static/sids-0.svg
+   :width: 100%
+
+   Once upon a time, there were databases.
+
+A Design Space Fable
+--------------------
+
+.. figure:: _static/sids-1.svg
+   :width: 100%
+
+   They became controlled by gatekeepers. The good people needed to liberate them.
+
+A Design Space Fable
+--------------------
+
+.. figure:: _static/sids-2.svg
+   :width: 100%
+
+   Along came Satoshi Nakamoto w/ Bitcoin: decentralized w/ strong write-authorization.
+
+A Design Space Fable
+--------------------
+
+.. figure:: _static/sids-3.svg
+   :width: 100%
+
+   Alas! Open Transparent Blockchains didn't protect the good people's privacy…
+
+A Design Space Fable
+--------------------
+
+.. figure:: _static/sids-4.svg
+   :width: 100%
+
+   Meanwhile "enterprise blockchains" appeared. They "solved" the privacy
+   problem with gatekeepers.
+
+A Design Space Fable
+--------------------
+
+.. figure:: _static/sids-5.svg
+   :width: 100%
+
+   Could the good people have a blockchain that was decentralized and
+   also private?
+
+A Design Space Fable
+--------------------
+
+.. figure:: _static/sids-final.svg
+   :width: 100%
+
+   Yes! Zcash is one example of an open confidential blockchain.
+
+Reviewing the Steps
+===================
+
+a. Bitcoin demonstrated how to evolve databases into open transparent
+   blockchains, giving us **decentralized write authorization**.
+
+⋮
+
+Reviewing the Steps
+===================
+
+a. **decentralized write authorization**
+b. A lot invested in enterprise blockchains, because centralization's
+   the most expedient path to **read authorization**.
+
+⋮
+
+Reviewing the Steps
+===================
+
+a. **decentralized write authorization**
+b. **centralized read authorization**
+c. Open confidential blockchains demonstrate how to regain
+   decentralization with **decentralized read authorization**.
+
+Reviewing the Steps
+===================
+
+a. **decentralized write authorization**
+b. **centralized read authorization**
+c. **decentralized read authorization**
+
+Is a Blockchain really a Database?
+==================================
+
+Nathan's fabled arc of design evolution imagines blockchains as database
+extensions. Is that an apt analogy?
+
+⋮
+
+Is a Blockchain really a Database?
+==================================
+
+Nathan's fabled arc of design evolution imagines blockchains as database
+extensions. Is that an apt analogy?
+
+I think so. Every website biz is just a glorified database frontend
+making money of gatekeeping, so this strikes at the heart of the upcoming
+economic transition.
+
+⋮
+
+Blockchain as a Database Caveats
+================================
+
+Some big caveats with this analogy:
+
+* incentives
+* scaling
+* trade-offs
 
 Thanks!
 =======
 
 - Questions?
-
-Thanks!
-=======
-
-- Questions?
-
-- PS: We're looking for engineers.
-
-
-.. Appendix A. Zerocash Roadmap
-.. ============================
-..
-.. I can't say much yet, except:
-..
-.. - It will happen.
-..
-.. - We're working on code which will become open source.
-..
-.. - We're still solving a few hard problems, such as parameter setup.

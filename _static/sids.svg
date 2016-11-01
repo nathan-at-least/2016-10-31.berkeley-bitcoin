@@ -1,32 +1,57 @@
 <svg version="1.1"
      baseProfile="full"
-     viewBox="0,0,2000,1000"
+     viewBox="0,0,1400,1000"
      xmlns="http://www.w3.org/2000/svg">
 
   <!--
-  <rect x="0" y="0" width="1999" height="999" stroke="black" fill="white" />
+  <rect x="0" y="0" width="1399" height="999" stroke="black" fill="white" />
   -->
 
-  <line x1="100" y1="900" x2="900" y2="900" stroke="black" stroke-width="5" />
-  <line x1="900" y1="900" x2="880" y2="880" stroke="black" stroke-width="5" />
-  <line x1="900" y1="900" x2="880" y2="920" stroke="black" stroke-width="5" />
+  <line x1="100" y1="900" x2="1100" y2="900" stroke="black" stroke-width="5" />
+  <line x1="1100" y1="900" x2="1080" y2="880" stroke="black" stroke-width="5" />
+  <line x1="1100" y1="900" x2="1080" y2="920" stroke="black" stroke-width="5" />
 
   <line x1="100" y1="900" x2="100" y2="100" stroke="black" stroke-width="5" />
   <line x1="100" y1="100" x2="120" y2="120" stroke="black" stroke-width="5" />
   <line x1="100" y1="100" x2="80" y2="120" stroke="black" stroke-width="5" />
 
-  <text x="500" y="970" font-size="60" text-anchor="middle" fill="black">Corruption Resistant</text>
-  <text x="500" y="960" font-size="60" text-anchor="middle" fill="black" transform="rotate(-90,60,960)">Confidential</text>
+  <text x="500" y="970" font-size="60" text-anchor="middle" fill="black">Decentralization</text>
+  <text x="500" y="960" font-size="60" text-anchor="middle" fill="black" transform="rotate(-90,60,960)">Confidentiality</text>
 
-  <circle cx="200" cy="550" r="40" stroke="black" stroke-width="3" fill="white" />
-  <text x="202" y="577" font-size="70" text-anchor="middle" fill="black">1</text>
-  <circle cx="1122" cy="175" r="40" stroke="black" stroke-width="3" fill="white" />
-  <text x="1100" y="200" font-size="70" text-anchor="left" fill="black">1 - Centralized Ledger</text>
+  <text x="340" y="810" font-size="40" text-anchor="middle" fill="black">Database</text>
 
+  <line x1="840" y1="800" x2="480" y2="800" stroke="black" stroke-width="3" />
+  <line x1="840" y1="800" x2="820" y2="790" stroke="black" stroke-width="3" />
+  <line x1="840" y1="800" x2="820" y2="810" stroke="black" stroke-width="3" />
+  <text x="650" y="840" font-size="40" text-anchor="middle" fill="black">a.</text>
+
+  <text x="1040" y="780" font-size="40" text-anchor="middle" fill="black">Open Transparent</text>
+  <text x="1040" y="840" font-size="40" text-anchor="middle" fill="black">Blockchain</text>
+
+  <line x1="340" y1="280" x2="340" y2="720" stroke="black" stroke-width="3" />
+  <line x1="340" y1="280" x2="350" y2="300" stroke="black" stroke-width="3" />
+  <line x1="340" y1="280" x2="330" y2="300" stroke="black" stroke-width="3" />
+  <text x="300" y="500" font-size="40" text-anchor="middle" fill="black">b.</text>
+
+  <text x="340" y="180" font-size="40" text-anchor="middle" fill="black">Enterprise</text>
+  <text x="340" y="240" font-size="40" text-anchor="middle" fill="black">Blockchain</text>
+
+  <line x1="840" y1="200" x2="480" y2="200" stroke="black" stroke-width="3" />
+  <line x1="840" y1="200" x2="820" y2="190" stroke="black" stroke-width="3" />
+  <line x1="840" y1="200" x2="820" y2="210" stroke="black" stroke-width="3" />
+  <text x="650" y="180" font-size="40" text-anchor="middle" fill="black">c.</text>
+
+  <line x1="1040" y1="280" x2="1040" y2="720" stroke="black" stroke-width="3" />
+  <line x1="1040" y1="280" x2="1050" y2="300" stroke="black" stroke-width="3" />
+  <line x1="1040" y1="280" x2="1030" y2="300" stroke="black" stroke-width="3" />
+  <text x="1080" y="500" font-size="40" text-anchor="middle" fill="black">c.</text>
+
+  <text x="1040" y="180" font-size="40" text-anchor="middle" fill="black">Open Confidential</text>
+  <text x="1040" y="240" font-size="40" text-anchor="middle" fill="black">Blockchain</text>
+
+  <!--
   <line x1="280" y1="590" x2="520" y2="720" stroke="black" stroke-width="3" />
 
-  <circle cx="600" cy="750" r="40" stroke="black" stroke-width="3" fill="white" />
-  <text x="602" y="777" font-size="70" text-anchor="middle" fill="black">2</text>
   <circle cx="1122" cy="275" r="40" stroke="black" stroke-width="3" fill="white" />
   <text x="1100" y="300" font-size="70" text-anchor="left" fill="black">2 - Bitcoin</text>
 
@@ -36,5 +61,6 @@
   <text x="702" y="277" font-size="70" text-anchor="middle" fill="black">3</text>
   <circle cx="1122" cy="375" r="40" stroke="black" stroke-width="3" fill="white" />
   <text x="1100" y="400" font-size="70" text-anchor="left" fill="black">3 - Zerocash</text>
+  -->
 
 </svg>
