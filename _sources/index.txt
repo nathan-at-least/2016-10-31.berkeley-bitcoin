@@ -350,8 +350,6 @@ I think so. Every website biz is just a glorified database frontend
 making money off gatekeeping, so this strikes at the heart of the upcoming
 economic transition.
 
-⋮
-
 Blockchain as a Database Caveats
 ================================
 
