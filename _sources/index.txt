@@ -347,7 +347,7 @@ Nathan's fabled arc of design evolution imagines blockchains as database
 extensions. Is that an apt analogy?
 
 I think so. Every website biz is just a glorified database frontend
-making money of gatekeeping, so this strikes at the heart of the upcoming
+making money off gatekeeping, so this strikes at the heart of the upcoming
 economic transition.
 
 ⋮
