@@ -119,7 +119,7 @@
 
 <h2>It's Alive!</h2>
 
-<div class="figure" id="id24">
+<div class="figure" id="id25">
 <a class="reference internal image-reference" href="_images/2016-10-31-zcashd-metrics-screen.png"><img alt="_images/2016-10-31-zcashd-metrics-screen.png" src="_images/2016-10-31-zcashd-metrics-screen.png" style="width: 80%;" /></a>
 <p class="caption"><span class="caption-text">HT &#64;str4d for screenshot; HT John Tromp for efficient CPU miner</span></p>
 </div>
@@ -263,7 +263,6 @@
 </ul>
 </li>
 </ul>
-<p>⋮</p>
 
 
 
@@ -273,14 +272,13 @@
 
 <h2>How?</h2>
 
-<ul class="simple">
-<li>The privacy is implemented with zero-knowledge proving technology.</li>
-<li>A zero-knowledge proof convinces a <cite>verifier</cite> of some logical statement, <cite>S</cite>,<ul>
-<li>-given <cite>S</cite> along with public inputs.</li>
-<li>-even though <cite>S</cite> is an assertion about those public inputs and <strong>private</strong> inputs.</li>
-</ul>
+<ul>
+<li><p class="first">Prover:</p>
+<p><code class="docutils literal"><span class="pre">prove(S,</span> <span class="pre">publics,</span> <span class="pre">secrets)</span> <span class="pre">-&gt;</span> <span class="pre">proof</span></code></p>
 </li>
-<li><strong>Zero-knowledge</strong> is a specific cryptographic property:</li>
+<li><p class="first">Verifier:</p>
+<p><code class="docutils literal"><span class="pre">verify(S,</span> <span class="pre">publics,</span> <span class="pre">proof)</span> <span class="pre">-&gt;</span> <span class="pre">True/False</span></code></p>
+</li>
 </ul>
 <p>⋮</p>
 
@@ -292,15 +290,36 @@
 
 <h2>How?</h2>
 
-<ul class="simple">
-<li>The privacy is implemented with zero-knowledge proving technology.</li>
-<li>A zero-knowledge proof convinces a <cite>verifier</cite> of some logical statement, <cite>S</cite>,<ul>
-<li>-when given <cite>S</cite> along with some <cite>public</cite> and some <cite>private</cite> inputs.</li>
-<li>-even though <cite>S</cite> is an assertion about those public inputs and <strong>private</strong> inputs.</li>
-</ul>
+<ul>
+<li><p class="first">Prover:</p>
+<p><code class="docutils literal"><span class="pre">prove(S,</span> <span class="pre">publics,</span> <span class="pre">secrets)</span> <span class="pre">-&gt;</span> <span class="pre">proof</span></code></p>
 </li>
-<li><strong>Zero-knowledge</strong> is a specific cryptographic property:<ul>
-<li><em>Nothing</em> can be learned about the private inputs from the proof.</li>
+<li><p class="first">Verifier:</p>
+<p><code class="docutils literal"><span class="pre">verify(S,</span> <span class="pre">publics,</span> <span class="pre">proof)</span> <span class="pre">-&gt;</span> <span class="pre">True/False</span></code></p>
+</li>
+<li><p class="first"><strong>Zero-knowledge</strong> is a specific cryptographic property:</p>
+</li>
+</ul>
+<p>⋮</p>
+
+
+
+
+</article>
+<article class="slide level-2" id="id11">
+
+<h2>How?</h2>
+
+<ul>
+<li><p class="first">Prover:</p>
+<p><code class="docutils literal"><span class="pre">prove(S,</span> <span class="pre">publics,</span> <span class="pre">secrets)</span> <span class="pre">-&gt;</span> <span class="pre">proof</span></code></p>
+</li>
+<li><p class="first">Verifier:</p>
+<p><code class="docutils literal"><span class="pre">verify(S,</span> <span class="pre">publics,</span> <span class="pre">proof)</span> <span class="pre">-&gt;</span> <span class="pre">True/False</span></code></p>
+</li>
+<li><p class="first"><strong>Zero-knowledge</strong> is a specific cryptographic property:</p>
+<ul class="simple">
+<li><em>Nothing</em> can be learned about the <code class="docutils literal"><span class="pre">secrets</span></code> from <code class="docutils literal"><span class="pre">proof</span></code>.</li>
 </ul>
 </li>
 </ul>
@@ -320,7 +339,7 @@
 
 
 </article>
-<article class="slide level-3" id="id11">
+<article class="slide level-3" id="id12">
 
 <h3>How? zk-SNARKs.</h3>
 
@@ -334,7 +353,7 @@
 
 
 </article>
-<article class="slide level-3" id="id12">
+<article class="slide level-3" id="id13">
 
 <h3>How? zk-SNARKs.</h3>
 
@@ -368,26 +387,13 @@
 
 
 </article>
-<article class="slide level-2" id="id13">
-
-<h2>A Design Space Fable</h2>
-
-<div class="figure" id="id25">
-<a class="reference internal image-reference" href="_images/sids-0.svg"><img alt="_images/sids-0.svg" src="_images/sids-0.svg" width="100%" /></a>
-<p class="caption"><span class="caption-text">Once upon a time, there were databases.</span></p>
-</div>
-
-
-
-
-</article>
 <article class="slide level-2" id="id14">
 
 <h2>A Design Space Fable</h2>
 
 <div class="figure" id="id26">
-<a class="reference internal image-reference" href="_images/sids-1.svg"><img alt="_images/sids-1.svg" src="_images/sids-1.svg" width="100%" /></a>
-<p class="caption"><span class="caption-text">They became controlled by gatekeepers. The good people needed to liberate them.</span></p>
+<a class="reference internal image-reference" href="_images/sids-0.svg"><img alt="_images/sids-0.svg" src="_images/sids-0.svg" width="100%" /></a>
+<p class="caption"><span class="caption-text">Once upon a time, there were databases.</span></p>
 </div>
 
 
@@ -399,8 +405,8 @@
 <h2>A Design Space Fable</h2>
 
 <div class="figure" id="id27">
-<a class="reference internal image-reference" href="_images/sids-2.svg"><img alt="_images/sids-2.svg" src="_images/sids-2.svg" width="100%" /></a>
-<p class="caption"><span class="caption-text">Along came Satoshi Nakamoto w/ Bitcoin: decentralized w/ strong write-authorization.</span></p>
+<a class="reference internal image-reference" href="_images/sids-1.svg"><img alt="_images/sids-1.svg" src="_images/sids-1.svg" width="100%" /></a>
+<p class="caption"><span class="caption-text">They became controlled by gatekeepers. The good people needed to liberate them.</span></p>
 </div>
 
 
@@ -412,8 +418,8 @@
 <h2>A Design Space Fable</h2>
 
 <div class="figure" id="id28">
-<a class="reference internal image-reference" href="_images/sids-3.svg"><img alt="_images/sids-3.svg" src="_images/sids-3.svg" width="100%" /></a>
-<p class="caption"><span class="caption-text">Alas! Open Transparent Blockchains didn't protect the good people's privacy…</span></p>
+<a class="reference internal image-reference" href="_images/sids-2.svg"><img alt="_images/sids-2.svg" src="_images/sids-2.svg" width="100%" /></a>
+<p class="caption"><span class="caption-text">Along came Satoshi Nakamoto w/ Bitcoin: decentralized w/ strong write-authorization.</span></p>
 </div>
 
 
@@ -425,9 +431,8 @@
 <h2>A Design Space Fable</h2>
 
 <div class="figure" id="id29">
-<a class="reference internal image-reference" href="_images/sids-4.svg"><img alt="_images/sids-4.svg" src="_images/sids-4.svg" width="100%" /></a>
-<p class="caption"><span class="caption-text">Meanwhile &quot;enterprise blockchains&quot; appeared. They &quot;solved&quot; the privacy
-problem with gatekeepers.</span></p>
+<a class="reference internal image-reference" href="_images/sids-3.svg"><img alt="_images/sids-3.svg" src="_images/sids-3.svg" width="100%" /></a>
+<p class="caption"><span class="caption-text">Alas! Open Transparent Blockchains didn't protect the good people's privacy…</span></p>
 </div>
 
 
@@ -439,9 +444,9 @@ problem with gatekeepers.</span></p>
 <h2>A Design Space Fable</h2>
 
 <div class="figure" id="id30">
-<a class="reference internal image-reference" href="_images/sids-5.svg"><img alt="_images/sids-5.svg" src="_images/sids-5.svg" width="100%" /></a>
-<p class="caption"><span class="caption-text">Could the good people have a blockchain that was decentralized and
-also private?</span></p>
+<a class="reference internal image-reference" href="_images/sids-4.svg"><img alt="_images/sids-4.svg" src="_images/sids-4.svg" width="100%" /></a>
+<p class="caption"><span class="caption-text">Meanwhile &quot;enterprise blockchains&quot; appeared. They &quot;solved&quot; the privacy
+problem with gatekeepers.</span></p>
 </div>
 
 
@@ -453,6 +458,20 @@ also private?</span></p>
 <h2>A Design Space Fable</h2>
 
 <div class="figure" id="id31">
+<a class="reference internal image-reference" href="_images/sids-5.svg"><img alt="_images/sids-5.svg" src="_images/sids-5.svg" width="100%" /></a>
+<p class="caption"><span class="caption-text">Could the good people have a blockchain that was decentralized and
+also private?</span></p>
+</div>
+
+
+
+
+</article>
+<article class="slide level-2" id="id20">
+
+<h2>A Design Space Fable</h2>
+
+<div class="figure" id="id32">
 <a class="reference internal image-reference" href="_images/sids-final.svg"><img alt="_images/sids-final.svg" src="_images/sids-final.svg" width="100%" /></a>
 <p class="caption"><span class="caption-text">Yes! Zcash is one example of an open confidential blockchain.</span></p>
 </div>
@@ -475,7 +494,7 @@ blockchains, giving us <strong>decentralized write authorization</strong>.</li>
 
 
 </article>
-<article class="slide level-1" id="id20">
+<article class="slide level-1" id="id21">
 
 <h1>Reviewing the Steps</h1>
 
@@ -490,7 +509,7 @@ the most expedient path to <strong>read authorization</strong>.</li>
 
 
 </article>
-<article class="slide level-1" id="id21">
+<article class="slide level-1" id="id22">
 
 <h1>Reviewing the Steps</h1>
 
@@ -505,7 +524,7 @@ decentralization with <strong>decentralized read authorization</strong>.</li>
 
 
 </article>
-<article class="slide level-1" id="id22">
+<article class="slide level-1" id="id23">
 
 <h1>Reviewing the Steps</h1>
 
@@ -531,7 +550,7 @@ extensions. Is that an apt analogy?</p>
 
 
 </article>
-<article class="slide level-1" id="id23">
+<article class="slide level-1" id="id24">
 
 <h1>Is a Blockchain really a Database?</h1>
 

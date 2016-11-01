@@ -145,16 +145,29 @@ How?
   + -given `S` along with `public` inputs.
   + -even though `S` is an assertion about those public inputs and **private** inputs.
 
+How?
+----
+
+* Prover:
+
+  ``prove(S, publics, secrets) -> proof``
+
+* Verifier:
+
+  ``verify(S, publics, proof) -> True/False``
+
 ⋮
 
 How?
 ----
 
-* The privacy is implemented with zero-knowledge proving technology.
-* A zero-knowledge proof convinces a `verifier` of some logical statement, `S`,
+* Prover:
 
-  + -given `S` along with public inputs.
-  + -even though `S` is an assertion about those public inputs and **private** inputs.
+  ``prove(S, publics, secrets) -> proof``
+
+* Verifier:
+
+  ``verify(S, publics, proof) -> True/False``
 
 * **Zero-knowledge** is a specific cryptographic property:
 
@@ -163,15 +176,17 @@ How?
 How?
 ----
 
-* The privacy is implemented with zero-knowledge proving technology.
-* A zero-knowledge proof convinces a `verifier` of some logical statement, `S`,
+* Prover:
 
-  + -when given `S` along with some `public` and some `private` inputs.
-  + -even though `S` is an assertion about those public inputs and **private** inputs.
+  ``prove(S, publics, secrets) -> proof``
+
+* Verifier:
+
+  ``verify(S, publics, proof) -> True/False``
 
 * **Zero-knowledge** is a specific cryptographic property:
 
-  + *Nothing* can be learned about the private inputs from the proof.
+  + *Nothing* can be learned about the ``secrets`` from ``proof``.
 
 How? zk-SNARKs.
 ~~~~~~~~~~~~~~~
