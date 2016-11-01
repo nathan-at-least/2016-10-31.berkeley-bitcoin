@@ -95,6 +95,7 @@ Transaction Details
   + sender,
   + recipient,
   + amount
+  + memo
 
 ⋮
 
@@ -106,6 +107,7 @@ Transaction Details
   + sender,
   + recipient,
   + amount
+  + memo
 
 - In Zcash tomorrow: privacy may be extended to cover more.
 
@@ -130,7 +132,7 @@ How?
 * The privacy is implemented with zero-knowledge proving technology.
 * A zero-knowledge proof convinces a `verifier` of some logical statement, `S`,
 
-  + -given `S` along with public and **private** inputs.
+  + -given `S` along with `public` inputs.
 
 ⋮
 
@@ -140,7 +142,19 @@ How?
 * The privacy is implemented with zero-knowledge proving technology.
 * A zero-knowledge proof convinces a `verifier` of some logical statement, `S`,
 
-  + -given `S` along with public and **private** inputs.
+  + -given `S` along with `public` inputs.
+  + -even though `S` is an assertion about those public inputs and **private** inputs.
+
+⋮
+
+How?
+----
+
+* The privacy is implemented with zero-knowledge proving technology.
+* A zero-knowledge proof convinces a `verifier` of some logical statement, `S`,
+
+  + -given `S` along with public inputs.
+  + -even though `S` is an assertion about those public inputs and **private** inputs.
 
 * **Zero-knowledge** is a specific cryptographic property:
 
@@ -153,6 +167,7 @@ How?
 * A zero-knowledge proof convinces a `verifier` of some logical statement, `S`,
 
   + -when given `S` along with some `public` and some `private` inputs.
+  + -even though `S` is an assertion about those public inputs and **private** inputs.
 
 * **Zero-knowledge** is a specific cryptographic property:
 
@@ -188,54 +203,6 @@ A Quick Intermission
 ====================
 
 pause. breath.
-
-Quiz Time
-=========
-
-"Zcash is…"
-
-⋮
-
-Quiz Time
-=========
-
-"Zcash is…"
-
-* ☐ a new app
-
-⋮
-
-Quiz Time
-=========
-
-"Zcash is…"
-
-* ☐ a new app
-* ☐ like Bitcoin, but with privacy
-
-⋮
-
-Quiz Time
-=========
-
-"Zcash is…"
-
-* ☐ a new app
-* ☐ like Bitcoin, but with privacy
-* ☐ a fancy new database
-
-?
-
-Quiz Time
-=========
-
-"Zcash is…"
-
-* ☑ a new app
-* ☑ like Bitcoin, but with privacy
-* ☑ a fancy new database
-
-All of these!
 
 A Design Space Fable
 ====================
